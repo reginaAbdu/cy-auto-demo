@@ -1,0 +1,35 @@
+{
+  "name": "tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run --headed",
+    "e2e": "npx cypress run --config 'baseUrl=https://qa.dev.thesoc.us'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.2",
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "cypress": "^11.2.0",
+    "cypress-xpath": "^2.0.1",
+    "eslint": "^8.25.0",
+    "eslint-config-prettier": "^8.5.0",
+    "fs-extra": "^10.1.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "mysql": "^2.18.1",
+    "mysql-ssh": "^1.0.6",
+    "node-xlsx": "^0.21.0",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
